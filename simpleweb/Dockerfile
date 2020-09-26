@@ -2,11 +2,15 @@
 # get a base image for node.js
 FROM node:alpine
 
+COPY ./ ./
 RUN npm install
 
 # tell the işmage what do do when it starts as containter.
 CMD ["npm", "start"]
 
-# docker build . 
+# docker build -t cihanulas/simpleweb .
 # we get the warning when we build. 
 # npm WARN saveError ENOENT: no such file or
+
+# reason is that the fs in container does not have package.json.
+# we have it in our local folder.
