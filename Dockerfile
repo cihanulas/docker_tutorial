@@ -15,3 +15,12 @@ CMD ["redis-server"]
 # and uses it.
 
 # docker build -t cihanulas/redis:latest .
+
+# Manually createimage
+# Install redis
+# docker run -it alpine sh
+# apk add --update redis
+# create some folder as well
+# open a new shell and get this container's id (with "docker ps"): c3d6dcb4ca69
+# then commit it: docker commit -c 'CMD "redis-server"' 544 cihanulas/my-redis
+# we got the containter with a new ID: 6e0f512915161
