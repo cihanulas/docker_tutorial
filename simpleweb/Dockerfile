@@ -8,7 +8,5 @@ RUN npm install
 CMD ["npm", "start"]
 
 # docker build . 
-# Successfully built 2b8a097d4c40
-# docker run -it 2b8a097d4c400+
-
-
+# we get the warning when we build. 
+# npm WARN saveError ENOENT: no such file or
