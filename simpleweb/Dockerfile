@@ -14,3 +14,9 @@ CMD ["npm", "start"]
 
 # reason is that the fs in container does not have package.json.
 # we have it in our local folder.
+
+# we need to map container to our comnputer network
+# to be able to forward data.
+
+# docker run -p 8080:8080 image_id.
+
