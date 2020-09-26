@@ -19,4 +19,7 @@ CMD ["npm", "start"]
 # to be able to forward data.
 
 # docker run -p 8080:8080 image_id.
+# map from different port from local 5000 to 8080
+# docker run -p 5000:8080 image_id.
+
 
