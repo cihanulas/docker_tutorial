@@ -9,4 +9,7 @@ CMD ["redis-server"]
 
 # docker build . 
 # Successfully built 2b8a097d4c40
-# docker run -it 2b8a097d4c40
+# docker run -it 2b8a097d4c400+
+
+# on the second build docker checks the cache
+# and uses it.
