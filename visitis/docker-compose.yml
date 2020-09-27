@@ -1,0 +1,15 @@
+version: "3"
+services:
+  redis-server:
+    image: "redis"
+  node-app:
+    build: .
+    ports: -"4001:8081"
+# version: docker-compose version.
+# services: indicates container.
+# we have to services which runs to container: redis and node.
+# we run the image redis on first service
+# in the second one we build and run image
+# ports we specify the ports but this is for local machine.
+# actually docker compose does not need the config.
+
