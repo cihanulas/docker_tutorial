@@ -2,6 +2,9 @@
 # get a base image for node.js
 FROM node:alpine
 
+# Specify work dir. It will be created if not exist, created. 
+WORKDIR /usr/app
+
 COPY ./ ./
 RUN npm install
 
@@ -23,3 +26,5 @@ CMD ["npm", "start"]
 # docker run -p 5000:8080 image_id.
 
 
+# attack and see the working dir. 
+# docker exec -it bf9 sh
