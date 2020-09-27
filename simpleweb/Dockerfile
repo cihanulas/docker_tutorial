@@ -5,8 +5,10 @@ FROM node:alpine
 # Specify work dir. It will be created if not exist, created. 
 WORKDIR /usr/app
 
-COPY ./ ./
+COPY ./package.json ./
 RUN npm install
+COPY ./ ./
+
 
 # tell the işmage what do do when it starts as containter.
 CMD ["npm", "start"]
