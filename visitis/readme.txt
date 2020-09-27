@@ -10,3 +10,9 @@ USE docker-compose
 
 Run: docker-compose up
 ReBuild & Run: docker-compose up --build
+
+Launc: in background (detach)
+docker-compose up -d
+
+Stop: docker-compose down
+
