@@ -7,3 +7,6 @@ We need to have  communication channel bw two container.
 Node App Container -> Redis Docker Container.
 
 USE docker-compose
+
+Run: docker-compose up
+ReBuild & Run: docker-compose up --build

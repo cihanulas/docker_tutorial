@@ -4,8 +4,10 @@ services:
     image: "redis"
   node-app:
     build: .
-    ports: -"4001:8081"
-# version: docker-compose version.
+    ports:
+      - "4001:8081"
+
+    # version: docker-compose version.
 # services: indicates container.
 # we have to services which runs to container: redis and node.
 # we run the image redis on first service
