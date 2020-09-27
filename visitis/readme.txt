@@ -1,4 +1,9 @@
 
 if you run the application in this state.
 we get error which indicates no redis server.
- 
+
+We need to have  communication channel bw two container.
+
+Node App Container -> Redis Docker Container.
+
+USE docker-compose
