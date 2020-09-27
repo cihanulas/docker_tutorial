@@ -16,3 +16,10 @@ docker-compose up -d
 
 Stop: docker-compose down
 
+
+Restart a container:
+no: never apptempt to restart.
+always: always retart.
+on-failure: if continer stops with an error code.
+unless-stopped: always restart unless a developer forcibly stop it.
+
