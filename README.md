@@ -1,2 +1,2 @@
 # docker_tutorial
-Dockr tutorial. Go through history.
+Docker tutorial. Go through history.
