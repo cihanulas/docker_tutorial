@@ -11,3 +11,11 @@ services:
       - .:/app
     image: cihanulas/web-react
     tty: true
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /app/node_modules
+      - .:/app
+    command: npm test
