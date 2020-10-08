@@ -18,5 +18,5 @@ Delete node_modules from local and build again. Much faster.
 Run
   docker run -it -p 3000:3000 cihanulas/react-frontend
 
-Run with Docker Volume
+Run with Docker Volume (DOES NOT WORK..)
   docker run -it -p 3000:3000 -v /app/node_modules -v $(pwd):/app cihanulas/react-frontend
