@@ -6,5 +6,8 @@ Run application:
   npm run test
   npm run build
 
-
-
+Build with Dockerfile.dev
+  docker build .
+     --> no such file or directory.
+  so use this.
+  docker build -f Dockerfile.dev .
