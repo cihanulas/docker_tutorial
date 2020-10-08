@@ -31,3 +31,6 @@ Use docker-compose
 
 Run test
   docker run -it cihanulas/web-react npm run test
+
+First  Console: docker-compose up
+Second Console: docker exec -it fa5 npm run test
