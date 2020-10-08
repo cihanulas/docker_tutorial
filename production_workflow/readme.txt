@@ -28,3 +28,6 @@ Use docker-compose
    build:
       context: .
       dockerfile: Dockerfile.dev
+
+Run test
+  docker run -it cihanulas/web-react npm run test
