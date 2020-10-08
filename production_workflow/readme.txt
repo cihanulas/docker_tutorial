@@ -24,3 +24,7 @@ Run with Docker Volume (DOES NOT WORK..)
 Use docker-compose
   docker-compose up
    --> 'Cannot locate specified Dockerfile: Dockerfile'
+   add the docker file into docker-compose.yml
+   build:
+      context: .
+      dockerfile: Dockerfile.dev
