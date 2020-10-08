@@ -5,6 +5,7 @@ WORKDIR '/app'
 COPY package.json .
 RUN npm install
 
+# not necessary but keep for productin
 COPY . .
 
 CMD ["npm", "run", "start"]
