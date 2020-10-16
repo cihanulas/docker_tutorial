@@ -5,4 +5,4 @@ services:
 before_install:
   - docker build -t cihanulas/my-react -f Dockerfile.dev .
 script:
-  - docker run cihanulas/my-react npm run test -- --coverage
+  - docker run -e CI=true cihanulas/my-react npm run test
