@@ -34,3 +34,6 @@ Run test
 
 First  Console: docker-compose up
 Second Console: docker exec -it fa5 npm run test
+
+Multi-step build.
+- Create Dockerfile.
